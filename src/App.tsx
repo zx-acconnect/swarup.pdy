@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy } from 'react';
+import { HelmetProvider } from 'react-helmet-async'; // Import Provider
 import { Navbar } from './components/layout/Navbar';
 import { ContactModal } from './components/layout/ContactModal';
 import { Sidebar } from './components/layout/Sidebar';
@@ -9,9 +10,10 @@ import { SystemConsole } from './components/ui/SystemConsole';
 import { ScrollProgress } from './components/ui/ScrollProgress';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { SkipLink } from './components/ui/SkipLink';
-import { StructuredData } from './components/seo/StructuredData'; // Import
+import { StructuredData } from './components/seo/StructuredData';
+import { SEOHead } from './components/seo/SEOHead'; // Import SEOHead
 import { useScrollSpy } from './hooks/useScrollSpy';
-import { useTelemetry } from './hooks/useTelemetry'; // Import
+import { useTelemetry } from './hooks/useTelemetry';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ConsoleProvider, useConsole } from './context/ConsoleContext';
 import { PORTFOLIO_DATA } from './data/content';
@@ -38,9 +40,7 @@ const AppContent: React.FC = () => {
   // 🚀 ACTIVATE REAL-TIME TELEMETRY
   useTelemetry();
 
-  useEffect(() => {
-    document.title = `${PORTFOLIO_DATA.config.name} | ${PORTFOLIO_DATA.config.title}`;
-  }, []);
+  // Removed manual document.title effect - handled by SEOHead
 
   useEffect(() => {
     if (!isLoading) {
@@ -59,7 +59,8 @@ const AppContent: React.FC = () => {
 
   return (
     <>
-      <StructuredData /> {/* SEO Injection */}
+      <SEOHead /> {/* Default SEO Tags */}
+      <StructuredData /> {/* JSON-LD Scema */}
       <AnimatePresence mode="wait">
         {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
       </AnimatePresence>
@@ -127,9 +128,11 @@ const AppContent: React.FC = () => {
 const App: React.FC = () => {
   return (
     <ErrorBoundary>
-      <ConsoleProvider>
-        <AppContent />
-      </ConsoleProvider>
+      <HelmetProvider>
+        <ConsoleProvider>
+          <AppContent />
+        </ConsoleProvider>
+      </HelmetProvider>
     </ErrorBoundary>
   );
 };
