@@ -38,9 +38,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
   // 3. Hero Section
   hero: {
     status: {
-      label: "Open to Work",
-      version: "2025 Batch",
-      readyText: "Immediate Joiner"
+      label: "DEVELOPERMENT PHASE",
+      version: "V1.0.0",
+      readyText: "This portfolio is still under development. Stay tuned for updates!"
     },
     watermark: "QE",
     headline: {
@@ -53,11 +53,11 @@ export const PORTFOLIO_DATA: PortfolioData = {
       suffix: " through rigorous manual & automated testing.",
       tagline: "// I break it so your users don't."
     },
-    cta: "Download Resume",           // Changed to prioritize getting hired
+    cta: "Download Resume",
     stats: [
-      { label: "Attention to Detail", value: 100, suffix: "%", decimals: 0, highlight: true }, // Critical soft skill for QA
-      { label: "Tech Stack", value: 4, suffix: "+" }, // HTML, CSS, JS, React
-      { label: "Bug Tolerance", value: 0, suffix: "%" } // Shows your mindset
+      { label: "Attention to Detail", value: 100, suffix: "%", decimals: 0, highlight: true },
+      { label: "Tech Stack", value: 4, suffix: "+" },
+      { label: "Bug Tolerance", value: 0, suffix: "%" }
     ]
   },
 
@@ -106,29 +106,28 @@ export const PORTFOLIO_DATA: PortfolioData = {
   },
 
   // 5. Skills Section
-  // 5. Skills Section
   skills: {
     label: "Core Competencies",
     title: "Technical Arsenal",
     items: [
       {
-        category: 'QA Fundamentals', // Changed from "Core Automation"
+        category: 'QA Fundamentals',
         items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile/Scrum', 'Jira'],
       },
       {
-        category: 'Web Technologies', // Your MCA Background
+        category: 'Web Technologies',
         items: ['JavaScript (ES6+)', 'React.js', 'HTML5', 'CSS3', 'DOM Manipulation'],
       },
       {
-        category: 'Automation Roadmap', // Your 4-5 month plan
+        category: 'Automation Roadmap',
         items: ['Playwright (Learning)', 'Selenium', 'API Testing', 'VS Code', 'npm'],
       },
       {
-        category: 'Tools & Utilities', // Essential tools you surely know/use
+        category: 'Tools & Utilities',
         items: ['Postman', 'Chrome DevTools', 'Git', 'GitHub', 'Vite'],
       },
       {
-        category: 'Soft Skills', // Crucial for freshers
+        category: 'Soft Skills',
         items: ['Analytical Thinking', 'Detail Oriented', 'Documentation', 'Collaboration', 'Problem Solving'],
       },
     ]
@@ -154,7 +153,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
       lastAudit: "Dec 2025",
       stats: [
         { label: "Graduation", value: 2025, suffix: " ", icon: Calendar },
-        { label: "Projects", value: 5, suffix: "+", icon: Award }, // Includes college/portfolio projects
+        { label: "Projects", value: 5, suffix: "+", icon: Award },
         { label: "Learning Rate", value: 100, suffix: "%", decimals: 0, icon: Activity }
       ]
     }
@@ -162,7 +161,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   // 7. Footer
   footer: {
-    statusText: "System Status: Nominal"
+    statusText: "System Status: Optimal",
   }
 };
 
