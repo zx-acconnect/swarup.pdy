@@ -28,7 +28,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   seo: {
     title: "Swarup Padhy | QA Architect - Portfolio",
     description: "Professional QA Architect Portfolio - Automation, Testing, Frameworks",
-    image: "https://swarup-pdy.vercel.app/OG_image.png",
+    image: "https://swarup-pdy.vercel.app/og-image.png",
     url: "https://swarup-pdy.vercel.app/",
     type: "website"
   },
