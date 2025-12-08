@@ -14,17 +14,18 @@ interface SEOHeadProps {
 export const SEOHead: React.FC<SEOHeadProps> = ({
     title,
     description,
-    canonicalUrl = window.location.origin,
-    image = '/og-image.png', // Fallback image needed in public folder
-    type = 'website',
+    canonicalUrl,
+    image,
+    type,
     keywords = []
 }) => {
-    const { config, about } = PORTFOLIO_DATA;
+    const { config, seo } = PORTFOLIO_DATA;
 
-    const siteTitle = title ? `${title} | ${config.title}` : `${config.name} | ${config.title}`;
-    const siteDescription = description || about.bio || "Senior QA Architect & Test Automation Engineer Portfolio";
-    const siteUrl = window.location.origin;
-    const siteImage = image.startsWith('http') ? image : `${siteUrl}${image}`;
+    const siteTitle = title || seo.title;
+    const siteDescription = description || seo.description;
+    const siteUrl = canonicalUrl || seo.url;
+    const siteImage = image || seo.image;
+    const siteType = type || seo.type;
 
     // Default keywords combined with props
     const allKeywords = [
@@ -42,11 +43,11 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
             <title>{siteTitle}</title>
             <meta name="description" content={siteDescription} />
             <meta name="keywords" content={allKeywords} />
-            <link rel="canonical" href={canonicalUrl} />
+            <link rel="canonical" href={siteUrl} />
 
             {/* Open Graph / Facebook */}
-            <meta property="og:type" content={type} />
-            <meta property="og:url" content={canonicalUrl} />
+            <meta property="og:type" content={siteType} />
+            <meta property="og:url" content={siteUrl} />
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={siteDescription} />
             <meta property="og:image" content={siteImage} />
@@ -54,7 +55,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
             {/* Twitter */}
             <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:creator" content="@swarup_qa" /> {/* Update if specific handle exists */}
+            <meta name="twitter:creator" content="@swarup_pdy" />
             <meta name="twitter:title" content={siteTitle} />
             <meta name="twitter:description" content={siteDescription} />
             <meta name="twitter:image" content={siteImage} />

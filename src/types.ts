@@ -119,8 +119,17 @@ export interface FooterContent {
   readonly statusText: string;
 }
 
+export interface SeoContent {
+  readonly title: string;
+  readonly description: string;
+  readonly image: string;
+  readonly url: string;
+  readonly type: string;
+}
+
 export interface PortfolioData {
   readonly config: SiteConfig;
+  readonly seo: SeoContent;
   readonly navbar: { readonly items: readonly NavItem[]; readonly ctaText: string };
   readonly hero: HeroContent;
   readonly projects: ProjectsContent;

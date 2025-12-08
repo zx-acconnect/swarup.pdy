@@ -24,6 +24,15 @@ export const PORTFOLIO_DATA: PortfolioData = {
     ]
   },
 
+  // 2. SEO Configuration
+  seo: {
+    title: "Swarup Padhy | QA Architect - Portfolio",
+    description: "QA Architect & Test Automation Engineer Portfolio. Dedicated to delivering bug-free user experiences.",
+    image: "https://swarup-pdy.vercel.app/public/OG_image.png",
+    url: "https://swarup-pdy.vercel.app/",
+    type: "website"
+  },
+
   // 2. Navigation
   navbar: {
     items: [
