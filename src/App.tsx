@@ -6,7 +6,7 @@ import { Sidebar } from './components/layout/Sidebar';
 import { HeroSection } from './components/sections/HeroSection';
 import { Footer } from './components/layout/Footer';
 import { Preloader } from './components/ui/Preloader';
-import { SystemConsole } from './components/ui/SystemConsole';
+
 import { ScrollProgress } from './components/ui/ScrollProgress';
 import { ErrorBoundary } from './components/ui/ErrorBoundary';
 import { SkipLink } from './components/ui/SkipLink';
@@ -117,7 +117,7 @@ const AppContent: React.FC = () => {
           />
 
           <Sidebar activeSection={activeSection} />
-          <SystemConsole />
+
 
           <main id="main-content" className="relative z-10 w-full max-w-[1600px] mx-auto px-6 md:px-12 xl:px-32 pb-32">
             <div id="home" className="scroll-mt-0 mb-32 lg:mb-40">
