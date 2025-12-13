@@ -34,13 +34,42 @@ const AppContent: React.FC = () => {
   const activeSection = useScrollSpy(PORTFOLIO_DATA.navbar.items.map((item) => item.id), 100);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isContactOpen, setIsContactOpen] = useState(false);
+
+  // Loading State Logic
+  // Start with explicit loading state, but only show preloader if it takes time
   const [isLoading, setIsLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(false);
   const { addLog } = useConsole();
 
   // 🚀 ACTIVATE REAL-TIME TELEMETRY
   useTelemetry();
 
-  // Removed manual document.title effect - handled by SEOHead
+  useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    const handleLoad = () => {
+      clearTimeout(timeoutId);
+      // Small buffer to ensure smooth transition
+      setTimeout(() => setIsLoading(false), 100);
+    };
+
+    // If page is already loaded (reloads/fast network)
+    if (document.readyState === 'complete') {
+      setIsLoading(false);
+    } else {
+      // Determine if we should show preloader
+      timeoutId = setTimeout(() => {
+        setShowPreloader(true);
+      }, 200); // Only show after 200ms of loading
+
+      window.addEventListener('load', handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   useEffect(() => {
     if (!isLoading) {
@@ -62,7 +91,7 @@ const AppContent: React.FC = () => {
       <SEOHead /> {/* Default SEO Tags */}
       <StructuredData /> {/* JSON-LD Scema */}
       <AnimatePresence mode="wait">
-        {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+        {isLoading && showPreloader && <Preloader />}
       </AnimatePresence>
 
       {!isLoading && (

@@ -165,7 +165,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenContact }) => {
                     {/* Primary Action: Download Resume (Both Skins) */}
                     <a
                       href={PORTFOLIO_DATA.config.resumeUrl}
-                      download
+                      download={PORTFOLIO_DATA.config.resumeFileName}
                       className="flex items-center gap-3 px-6 py-3 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-full font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest hover:bg-emerald-600 dark:hover:bg-emerald-400 hover:text-white dark:hover:text-zinc-900 transition-all"
                     >
                       {hero.cta}

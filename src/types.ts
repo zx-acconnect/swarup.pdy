@@ -57,6 +57,7 @@ export interface SiteConfig {
   };
   readonly email: string;
   readonly resumeUrl: string;
+  readonly resumeFileName: string;
   readonly socials: readonly SocialLink[];
 }
 

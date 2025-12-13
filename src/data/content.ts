@@ -4,6 +4,7 @@ import {
   Calendar,
   Github,
   Linkedin,
+  Twitter,
 } from 'lucide-react';
 import { PortfolioData } from '../types';
 
@@ -18,9 +19,11 @@ export const PORTFOLIO_DATA: PortfolioData = {
     },
     email: "swarup.pdy@gmail.com",
     resumeUrl: "/Resume.pdf",
+    resumeFileName: "Swarup_QA_Architect.pdf",
     socials: [
-      { label: 'Github', url: 'https://github.com', icon: Github },
-      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
+      { label: 'Github', url: 'https://github.com/swarup-padhy', icon: Github },
+      { label: 'LinkedIn', url: 'https://linkedin.com/in/swarup-padhy', icon: Linkedin },
+      { label: 'X (Twitter)', url: 'https://x.com/swarup_pdy', icon: Twitter }
     ]
   },
 
