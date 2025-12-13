@@ -109,7 +109,7 @@ export const SystemConsole: React.FC = () => {
           )}
         </div>
         <span className="font-mono text-[10px] uppercase tracking-widest font-medium">
-          {isOpen ? 'System: Connected' : 'System: Online'}
+          {isOpen ? 'Connected' : 'Online'}
         </span>
         {isOpen ? <Minimize2 size={12} /> : <Maximize2 size={12} />}
       </motion.button>
