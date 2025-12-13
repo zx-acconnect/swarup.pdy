@@ -110,8 +110,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenContact }) => {
         </motion.div>
       </div>
 
-      <div className="absolute top-[15%] left-0 w-full h-px bg-gradient-to-r from-transparent via-zinc-200 dark:via-zinc-800 to-transparent" />
-
       <div className="w-full max-w-[1600px] mx-auto relative z-10 px-4 sm:px-6">
 
         <div className="flex items-center gap-6 mb-6">
