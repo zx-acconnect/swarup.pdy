@@ -12,14 +12,14 @@ export const PORTFOLIO_DATA: PortfolioData = {
   // 1. Global Site Configuration
   config: {
     name: "Swarup padhy",
-    title: "QA Architect",
+    title: "QE Engineer",
     logo: {
       main: "swarup.pdy",
-      sub: "QA Architect"
+      sub: "QE Engineer"
     },
     email: "swarup.pdy@gmail.com",
     resumeUrl: "/Resume.pdf",
-    resumeFileName: "Swarup_QA_Architect.pdf",
+    resumeFileName: "Swarup_QE_Engineer.pdf",
     socials: [
       { label: 'Github', url: 'https://github.com/swarup-padhy', icon: Github },
       { label: 'LinkedIn', url: 'https://linkedin.com/in/swarup-padhy', icon: Linkedin },
@@ -29,8 +29,8 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   // 2. SEO Configuration
   seo: {
-    title: "Swarup Padhy | QA Architect - Portfolio",
-    description: "Professional QA Architect Portfolio - Automation, Testing, Frameworks",
+    title: "Swarup Padhy | QE Engineer - Portfolio",
+    description: "Professional QE Engineer Portfolio - Automation, Testing, Frameworks",
     image: "https://swarup-pdy.vercel.app/og-image.png",
     url: "https://swarup-pdy.vercel.app/",
     type: "website"
@@ -51,9 +51,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
   // 3. Hero Section
   hero: {
     status: {
-      label: "DEVELOPERMENT PHASE",
-      version: "V1.0.0",
-      readyText: "This portfolio is still under development. Stay tuned for updates!"
+      label: "OPEN TO WORK",
+      version: "IMMEDIATE JOINER",
+      readyText: "Ready to deploy as a Quality Engineer."
     },
     watermark: "QE",
     headline: {
@@ -76,44 +76,31 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   // 4. Projects Section
   projects: {
-    label: "Engineering Logs",
+    label: "Quality Assurance Logs", // Adjusted label to fit your role
     title: "Selected Case Studies",
     items: [
       {
         id: '01',
-        title: 'HFT Algorithmic Core',
-        description: 'Architected the validation framework for a nanosecond-latency trading engine. Implemented kernel-bypass networking tests and automated regression pipelines that reduced deployment risk by 99% in a high-frequency trading environment.',
-        tags: ['C++', 'Python', 'FPGA Testing', 'Latency Mon'],
+        title: 'Real-Time Chat App QA',
+        description: 'Conducted end-to-end manual testing for a MERN-stack messaging application. Validated critical WebSocket synchronization logic, network resilience (offline/online states), and session management. Identified and reported critical bugs regarding data sync failures across multiple browser windows.',
+        tags: ['Manual Testing', 'Jira Style Reporting', 'WebSocket Logic', 'Resilience Testing'],
         metrics: [
-          { label: 'Latency Reduct', value: 45, suffix: '%' },
-          { label: 'Test Vector', value: 1.2, suffix: 'M' },
-          { label: 'Deploy Freq', value: 12, suffix: '/day' },
+          { label: 'Bugs Found', value: 5 },
+          { label: 'Test Cases', value: 42 },
+          { label: 'Critical Defects', value: 1 },
         ],
-        repoUrl: 'https://github.com/swarup-pdy/hft-core',
+        repoUrl: 'https://github.com/swarup-padhy/Mern-Chat-QA',
       },
       {
         id: '02',
-        title: 'Distributed Load Mesh',
-        description: 'Designed a self-healing load generation mesh on AWS Lambda capable of simulating 100k+ concurrent IoT devices. This framework identified critical race conditions in the ingestion layer before production rollout.',
-        tags: ['Go', 'Terraform', 'AWS Lambda', 'MQTT'],
+        title: 'Personal Portfolio (Dev & Test)',
+        description: 'Designed, developed, and tested this portfolio platform end-to-end. Acting as both Developer and QA, I executed rigorous non-functional testing to ensure 98% performance scores, fully responsive layout across devices, and cross-browser compatibility.',
+        tags: ['React', 'Lighthouse Audits', 'Performance Testing', 'Dev + QA'],
         metrics: [
-          { label: 'Concurrency', value: 100, suffix: 'k' },
-          { label: 'Cost/Test', value: 0.85, prefix: '$' },
-          { label: 'Bugs Caught', value: 24 },
+          { label: 'Lighthouse', value: 98, suffix: '/100' },
+          { label: 'Accessibility', value: 100, suffix: '%' },
+          { label: 'Roles', value: 'Dev + QA' }, // Creative use of metric to show dual role
         ],
-        repoUrl: 'https://github.com/swarup-pdy/load-mesh',
-      },
-      {
-        id: '03',
-        title: 'Security Compliance Bot',
-        description: 'Developed an automated security auditing bot that continuously scans for OWASP Top 10 vulnerabilities and GDPR compliance issues within the CI pipeline, enforcing strict quality gates for banking applications.',
-        tags: ['Python', 'Zap', 'SonarQube', 'DevSecOps'],
-        metrics: [
-          { label: 'Vuln. Blocked', value: 142 },
-          { label: 'Audit Time', value: 3, suffix: 'm' },
-          { label: 'Coverage', value: 100, suffix: '%' },
-        ],
-        repoUrl: 'https://github.com/swarup-pdy/sec-bot',
       },
     ]
   },
@@ -125,7 +112,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
     items: [
       {
         category: 'QA Fundamentals',
-        items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile/Scrum', 'Jira'],
+        items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile', 'Jira'],
       },
       {
         category: 'Web Technologies',
@@ -151,9 +138,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
     label: "Candidate Profile",
     title: "Operative Profile",
     // Bio rewritten to highlight MCA degree + Developer mindset applied to QA
-    bio: `I am a recent MCA Graduate (2025) and aspiring Quality Engineer with a developer's mindset. With a strong foundation in web technologies (HTML, CSS, JS, React), I don't just find bugs—I understand why they happen. I am currently focused on mastering Manual Testing methodologies while building a robust automation skillset within the JavaScript ecosystem. My goal is to bridge the gap between code and customer satisfaction.`,
+    bio: `Aspiring QA Engineer and 2025 MCA Graduate. I hold a strong proficiency in Manual Testing methodologies (STLC, Bug Life Cycle) and a technical background in Web Development (JavaScript, React). Currently transitioning into Test Automation to build scalable testing frameworks. Passionate about bridging the gap between development and quality assurance.`,
     metadata: [
-      { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" }, // Updated location
+      { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" },
       { label: "Availability", value: "Immediate", sub: "Full-time / Intern" }
     ],
     status: {

@@ -13,7 +13,7 @@ export interface SocialLink {
 
 export interface ProjectMetric {
   readonly label: string;
-  readonly value: number;
+  readonly value: number | string;
   readonly suffix?: string;
   readonly prefix?: string;
 }

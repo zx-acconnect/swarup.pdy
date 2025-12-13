@@ -104,21 +104,29 @@ export const ProjectCard = memo(({ project, index }: ProjectCardProps) => {
                     </span>
                   </div>
                   <div className="font-display text-xl font-bold text-zinc-900 dark:text-zinc-100 tabular-nums">
-                    <CountUp value={metric.value} suffix={metric.suffix} />
+                    {typeof metric.value === 'number' ? (
+                      <CountUp value={metric.value} suffix={metric.suffix} />
+                    ) : (
+                      <span>{metric.value}{metric.suffix}</span>
+                    )}
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <a
-            href={project.repoUrl || '#'}
-            className="flex items-center justify-between p-4 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-lg group/btn hover:bg-emerald-600 dark:hover:bg-emerald-500 transition-colors mt-2"
-            aria-label={`View source code for ${project.title}`}
-          >
-            <span className="font-mono text-xs font-bold uppercase tracking-widest">View Source</span>
-            <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-          </a>
+          {project.repoUrl && (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between p-4 bg-zinc-900 dark:bg-zinc-100 text-zinc-100 dark:text-zinc-900 rounded-lg group/btn hover:bg-emerald-600 dark:hover:bg-emerald-500 transition-colors mt-2"
+              aria-label={`View source code for ${project.title}`}
+            >
+              <span className="font-mono text-xs font-bold uppercase tracking-widest">View Source</span>
+              <ArrowUpRight size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+            </a>
+          )}
         </div>
 
       </div>
