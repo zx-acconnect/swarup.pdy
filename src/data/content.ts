@@ -11,14 +11,15 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   // 1. Global Site Configuration
   config: {
-    name: "Swarup Padhy",
-    title: "QA Engineer",
-    logo: {
-      main: "swarup.pdy",
-      sub: "QA Engineer"
-    },
-    email: "swarup.pdy@gmail.com",
-    resumeUrl: "/Resume.pdf",
+  name: "Swarup Padhy",
+  title: "QA Engineer",
+  logo: {
+    main: "swarup.pdy",
+    sub: "QA Engineer"
+  },
+  email: "swarup.pdy@gmail.com",
+  resumeUrl: "/Resume.pdf",
+  resumeFileName: "Swarup_Padhy_QA_Resume.pdf",
     socials: [
       { label: 'Github', url: 'https://github.com', icon: Github },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
