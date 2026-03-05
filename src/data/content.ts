@@ -8,18 +8,16 @@ import {
 import { PortfolioData } from '../types';
 
 export const PORTFOLIO_DATA: PortfolioData = {
-
   // 1. Global Site Configuration
   config: {
-  name: "Swarup Padhy",
-  title: "QA Engineer",
-  logo: {
-    main: "swarup.pdy",
-    sub: "QA Engineer"
-  },
-  email: "swarup.pdy@gmail.com",
-  resumeUrl: "/Resume.pdf",
-  resumeFileName: "Swarup_Padhy_QA_Resume.pdf",
+    name: "Swarup padhy",
+    title: "QA Architect",
+    logo: {
+      main: "swarup.pdy",
+      sub: "QA Architect"
+    },
+    email: "swarup.pdy@gmail.com",
+    resumeUrl: "/Resume.pdf",
     socials: [
       { label: 'Github', url: 'https://github.com', icon: Github },
       { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
@@ -41,7 +39,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
   hero: {
     status: {
       label: "Open to Work",
-      version: "2025 Graduate",
+      version: "2025 Batch",
       readyText: "Immediate Joiner"
     },
     watermark: "QE",
@@ -50,16 +48,16 @@ export const PORTFOLIO_DATA: PortfolioData = {
       secondary: "Engineer"
     },
     bio: {
-      prefix: "Focused on ",
-      highlight: "breaking systems before users do",
-      suffix: " through structured manual testing, API validation, and security analysis.",
-      tagline: "// 150+ test cases executed • 13 defects discovered • STLC documented"
+      prefix: "Dedicated to ",
+      highlight: "delivering bug-free user experiences",
+      suffix: " through rigorous manual & automated testing.",
+      tagline: "// I break it so your users don't."
     },
-    cta: "Download Resume",
+    cta: "Download Resume",           // Changed to prioritize getting hired
     stats: [
-      { label: "Test Cases Executed", value: 150, suffix: "+" },
-      { label: "Defects Identified", value: 13, suffix: "" },
-      { label: "Modules Tested", value: 13, suffix: "" }
+      { label: "Attention to Detail", value: 100, suffix: "%", decimals: 0, highlight: true }, // Critical soft skill for QA
+      { label: "Tech Stack", value: 4, suffix: "+" }, // HTML, CSS, JS, React
+      { label: "Bug Tolerance", value: 0, suffix: "%" } // Shows your mindset
     ]
   },
 
@@ -70,98 +68,80 @@ export const PORTFOLIO_DATA: PortfolioData = {
     items: [
       {
         id: '01',
-        title: 'Authentication System — QA & Security Testing',
-        description: 'Executed a complete Software Testing Life Cycle (STLC) audit for a MERN-based authentication system. Designed 113 test scenarios and 150 manual test cases covering signup, login, password recovery, session handling, and API validation. Identified 13 defects including critical security vulnerabilities such as NoSQL injection, missing rate limiting, and sensitive error message exposure.',
-        tags: ['Manual Testing', 'API Testing', 'Security Testing', 'Postman', 'MongoDB'],
+        title: 'HFT Algorithmic Core',
+        description: 'Architected the validation framework for a nanosecond-latency trading engine. Implemented kernel-bypass networking tests and automated regression pipelines that reduced deployment risk by 99% in a high-frequency trading environment.',
+        tags: ['C++', 'Python', 'FPGA Testing', 'Latency Mon'],
         metrics: [
-          { label: 'Test Cases', value: 150 },
-          { label: 'Bugs Found', value: 13 },
-          { label: 'Modules', value: 13 },
+          { label: 'Latency Reduct', value: 45, suffix: '%' },
+          { label: 'Test Vector', value: 1.2, suffix: 'M' },
+          { label: 'Deploy Freq', value: 12, suffix: '/day' },
         ],
-        repoUrl: 'https://github.com'
+        repoUrl: 'https://github.com/swarup-pdy/hft-core',
       },
       {
         id: '02',
-        title: 'AI Data Analysis Automation (RAG System)',
-        description: 'Built a Python-based Retrieval-Augmented Generation (RAG) workflow during internship to analyze large CSV and Excel datasets. Implemented data preprocessing, chunking, embeddings, and vector indexing for semantic search. Integrated Ollama LLM with Top-K retrieval to automate dataset pattern analysis and reduce manual research effort.',
-        tags: ['Python', 'RAG', 'Data Processing', 'Ollama', 'Vector DB'],
+        title: 'Distributed Load Mesh',
+        description: 'Designed a self-healing load generation mesh on AWS Lambda capable of simulating 100k+ concurrent IoT devices. This framework identified critical race conditions in the ingestion layer before production rollout.',
+        tags: ['Go', 'Terraform', 'AWS Lambda', 'MQTT'],
         metrics: [
-          { label: 'Internship', value: 4, suffix: 'mo' },
-          { label: 'Data Sources', value: 2, suffix: '+' },
-          { label: 'Automation Gain', value: 60, suffix: '%' },
+          { label: 'Concurrency', value: 100, suffix: 'k' },
+          { label: 'Cost/Test', value: 0.85, prefix: '$' },
+          { label: 'Bugs Caught', value: 24 },
         ],
-        repoUrl: 'https://github.com'
+        repoUrl: 'https://github.com/swarup-pdy/load-mesh',
+      },
+      {
+        id: '03',
+        title: 'Security Compliance Bot',
+        description: 'Developed an automated security auditing bot that continuously scans for OWASP Top 10 vulnerabilities and GDPR compliance issues within the CI pipeline, enforcing strict quality gates for banking applications.',
+        tags: ['Python', 'Zap', 'SonarQube', 'DevSecOps'],
+        metrics: [
+          { label: 'Vuln. Blocked', value: 142 },
+          { label: 'Audit Time', value: 3, suffix: 'm' },
+          { label: 'Coverage', value: 100, suffix: '%' },
+        ],
+        repoUrl: 'https://github.com/swarup-pdy/sec-bot',
       },
     ]
   },
 
+  // 5. Skills Section
   // 5. Skills Section
   skills: {
     label: "Core Competencies",
     title: "Technical Arsenal",
     items: [
       {
-        category: 'Testing Fundamentals',
-        items: [
-          'Manual Testing',
-          'Test Case Design',
-          'Test Scenario Development',
-          'Bug Reporting',
-          'STLC & SDLC'
-        ],
+        category: 'QA Fundamentals', // Changed from "Core Automation"
+        items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile/Scrum', 'Jira'],
       },
       {
-        category: 'API & Backend Testing',
-        items: [
-          'API Testing',
-          'Postman',
-          'JSON Validation',
-          'HTTP Methods',
-          'Status Code Analysis'
-        ],
+        category: 'Web Technologies', // Your MCA Background
+        items: ['JavaScript (ES6+)', 'React.js', 'HTML5', 'CSS3', 'DOM Manipulation'],
       },
       {
-        category: 'Security Awareness',
-        items: [
-          'OWASP Basics',
-          'Authentication Testing',
-          'Input Validation',
-          'Session Testing',
-          'Injection Vulnerabilities'
-        ],
+        category: 'Automation Roadmap', // Your 4-5 month plan
+        items: ['Playwright (Learning)', 'Selenium', 'API Testing', 'VS Code', 'npm'],
       },
       {
-        category: 'Tools',
-        items: [
-          'Postman',
-          'MongoDB Compass',
-          'Chrome DevTools',
-          'Git',
-          'GitHub'
-        ],
+        category: 'Tools & Utilities', // Essential tools you surely know/use
+        items: ['Postman', 'Chrome DevTools', 'Git', 'GitHub', 'Vite'],
       },
       {
-        category: 'Automation (Learning)',
-        items: [
-          'Python',
-          'Selenium',
-          'Playwright',
-          'Pytest',
-          'Automation Framework Basics'
-        ],
+        category: 'Soft Skills', // Crucial for freshers
+        items: ['Analytical Thinking', 'Detail Oriented', 'Documentation', 'Collaboration', 'Problem Solving'],
       },
     ]
   },
 
-  // 6. About Section
+  // 6. About Section (Dossier)
   about: {
     label: "Candidate Profile",
     title: "Operative Profile",
-    bio: `QA Engineer with hands-on experience executing full Software Testing Life Cycle processes on real web applications. Designed and executed 150+ manual test cases across authentication workflows including login, signup, password recovery, and token management. Identified 13 defects including critical security vulnerabilities such as NoSQL injection and brute-force attack exposure.
-
-Additionally completed an AI Automation internship where I built Python-based data analysis pipelines using Retrieval-Augmented Generation (RAG) techniques. Currently expanding expertise in API testing and Python automation to build scalable QA pipelines.`,
+    // Bio rewritten to highlight MCA degree + Developer mindset applied to QA
+    bio: `I am a recent MCA Graduate (2025) and aspiring Quality Engineer with a developer's mindset. With a strong foundation in web technologies (HTML, CSS, JS, React), I don't just find bugs—I understand why they happen. I am currently focused on mastering Manual Testing methodologies while building a robust automation skillset within the JavaScript ecosystem. My goal is to bridge the gap between code and customer satisfaction.`,
     metadata: [
-      { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" },
+      { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" }, // Updated location
       { label: "Availability", value: "Immediate", sub: "Full-time / Intern" }
     ],
     status: {
@@ -173,8 +153,8 @@ Additionally completed an AI Automation internship where I built Python-based da
       id: "#MCA-2025",
       lastAudit: "Dec 2025",
       stats: [
-        { label: "Graduation", value: 2025, suffix: "", icon: Calendar },
-        { label: "QA Case Studies", value: 2, suffix: "+", icon: Award },
+        { label: "Graduation", value: 2025, suffix: " ", icon: Calendar },
+        { label: "Projects", value: 5, suffix: "+", icon: Award }, // Includes college/portfolio projects
         { label: "Learning Rate", value: 100, suffix: "%", decimals: 0, icon: Activity }
       ]
     }
@@ -182,11 +162,11 @@ Additionally completed an AI Automation internship where I built Python-based da
 
   // 7. Footer
   footer: {
-    statusText: "System Status: Open for QA Opportunities"
+    statusText: "System Status: Nominal"
   }
 };
 
-// Backward compatibility exports
+// Backward compatibility exports if needed, pointing to the new structure
 export const NAV_ITEMS = PORTFOLIO_DATA.navbar.items;
 export const SOCIAL_LINKS = PORTFOLIO_DATA.config.socials;
 export const PROJECTS = PORTFOLIO_DATA.projects.items;
