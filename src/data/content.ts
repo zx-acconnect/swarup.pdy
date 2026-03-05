@@ -4,38 +4,26 @@ import {
   Calendar,
   Github,
   Linkedin,
-  Twitter,
 } from 'lucide-react';
 import { PortfolioData } from '../types';
 
 export const PORTFOLIO_DATA: PortfolioData = {
+
   // 1. Global Site Configuration
   config: {
-    name: "Swarup padhy",
-    title: "QE Engineer",
+    name: "Swarup Padhy",
+    title: "QA Engineer",
     logo: {
       main: "swarup.pdy",
-      sub: "QE Engineer"
+      sub: "QA Engineer"
     },
     email: "swarup.pdy@gmail.com",
-    resumeUrl: "/Swarup_QE_Engineer.pdf",
-    resumeFileName: "Swarup_QE_Engineer.pdf",
+    resumeUrl: "/Resume.pdf",
     socials: [
-      { label: 'Github', url: 'https://github.com/swarup-padhy', icon: Github },
-      { label: 'LinkedIn', url: 'https://linkedin.com/in/swarup-padhy', icon: Linkedin },
-      { label: 'X (Twitter)', url: 'https://x.com/swarup_pdy', icon: Twitter }
+      { label: 'Github', url: 'https://github.com', icon: Github },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
     ]
   },
-
-  // 2. SEO Configuration
-  seo: {
-    title: "Swarup Padhy | QE Engineer - Portfolio",
-    description: "Professional QE Engineer Portfolio - Automation, Testing, Frameworks",
-    image: "https://swarup-pdy.vercel.app/og-image.png",
-    url: "https://swarup-pdy.vercel.app/",
-    type: "website"
-  },
-
 
   // 2. Navigation
   navbar: {
@@ -51,9 +39,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
   // 3. Hero Section
   hero: {
     status: {
-      label: "OPEN TO WORK",
-      version: "IMMEDIATE JOINER",
-      readyText: "Ready to deploy as a Quality Engineer."
+      label: "Open to Work",
+      version: "2025 Graduate",
+      readyText: "Immediate Joiner"
     },
     watermark: "QE",
     headline: {
@@ -61,46 +49,47 @@ export const PORTFOLIO_DATA: PortfolioData = {
       secondary: "Engineer"
     },
     bio: {
-      prefix: "Dedicated to ",
-      highlight: "delivering bug-free user experiences",
-      suffix: " through rigorous manual & automated testing.",
-      tagline: "// I break it so your users don't."
+      prefix: "Focused on ",
+      highlight: "breaking systems before users do",
+      suffix: " through structured manual testing, API validation, and security analysis.",
+      tagline: "// 150+ test cases executed • 13 defects discovered • STLC documented"
     },
     cta: "Download Resume",
     stats: [
-      { label: "Attention to Detail", value: 100, suffix: "%", decimals: 0, highlight: true },
-      { label: "Tech Stack", value: 4, suffix: "+" },
-      { label: "Bug Tolerance", value: 0, suffix: "%" }
+      { label: "Test Cases Executed", value: 150, suffix: "+" },
+      { label: "Defects Identified", value: 13, suffix: "" },
+      { label: "Modules Tested", value: 13, suffix: "" }
     ]
   },
 
   // 4. Projects Section
   projects: {
-    label: "Quality Assurance Logs", // Adjusted label to fit your role
+    label: "Engineering Logs",
     title: "Selected Case Studies",
     items: [
       {
         id: '01',
-        title: 'Real-Time Chat App QA',
-        description: 'Conducted end-to-end manual testing for a MERN-stack messaging application. Validated critical WebSocket synchronization logic, network resilience (offline/online states), and session management. Identified and reported critical bugs regarding data sync failures across multiple browser windows.',
-        tags: ['Manual Testing', 'Jira Style Reporting', 'WebSocket Logic', 'Resilience Testing'],
+        title: 'Authentication System — QA & Security Testing',
+        description: 'Executed a complete Software Testing Life Cycle (STLC) audit for a MERN-based authentication system. Designed 113 test scenarios and 150 manual test cases covering signup, login, password recovery, session handling, and API validation. Identified 13 defects including critical security vulnerabilities such as NoSQL injection, missing rate limiting, and sensitive error message exposure.',
+        tags: ['Manual Testing', 'API Testing', 'Security Testing', 'Postman', 'MongoDB'],
         metrics: [
-          { label: 'Bugs Found', value: 5 },
-          { label: 'Test Cases', value: 42 },
-          { label: 'Critical Defects', value: 1 },
+          { label: 'Test Cases', value: 150 },
+          { label: 'Bugs Found', value: 13 },
+          { label: 'Modules', value: 13 },
         ],
-        repoUrl: 'https://github.com/swarup-padhy/Mern-Chat-QA',
+        repoUrl: 'https://github.com'
       },
       {
         id: '02',
-        title: 'Personal Portfolio (Dev & Test)',
-        description: 'Designed, developed, and tested this portfolio platform end-to-end. Acting as both Developer and QA, I executed rigorous non-functional testing to ensure 98% performance scores, fully responsive layout across devices, and cross-browser compatibility.',
-        tags: ['React', 'Lighthouse Audits', 'Performance Testing', 'Dev + QA'],
+        title: 'AI Data Analysis Automation (RAG System)',
+        description: 'Built a Python-based Retrieval-Augmented Generation (RAG) workflow during internship to analyze large CSV and Excel datasets. Implemented data preprocessing, chunking, embeddings, and vector indexing for semantic search. Integrated Ollama LLM with Top-K retrieval to automate dataset pattern analysis and reduce manual research effort.',
+        tags: ['Python', 'RAG', 'Data Processing', 'Ollama', 'Vector DB'],
         metrics: [
-          { label: 'Lighthouse', value: 98, suffix: '/100' },
-          { label: 'Accessibility', value: 100, suffix: '%' },
-          { label: 'Roles', value: 'Dev + QA' }, // Creative use of metric to show dual role
+          { label: 'Internship', value: 4, suffix: 'mo' },
+          { label: 'Data Sources', value: 2, suffix: '+' },
+          { label: 'Automation Gain', value: 60, suffix: '%' },
         ],
+        repoUrl: 'https://github.com'
       },
     ]
   },
@@ -111,34 +100,65 @@ export const PORTFOLIO_DATA: PortfolioData = {
     title: "Technical Arsenal",
     items: [
       {
-        category: 'QA Fundamentals',
-        items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile', 'Jira'],
+        category: 'Testing Fundamentals',
+        items: [
+          'Manual Testing',
+          'Test Case Design',
+          'Test Scenario Development',
+          'Bug Reporting',
+          'STLC & SDLC'
+        ],
       },
       {
-        category: 'Web Technologies',
-        items: ['JavaScript (ES6+)', 'React.js', 'HTML5', 'CSS3', 'DOM Manipulation'],
+        category: 'API & Backend Testing',
+        items: [
+          'API Testing',
+          'Postman',
+          'JSON Validation',
+          'HTTP Methods',
+          'Status Code Analysis'
+        ],
       },
       {
-        category: 'Automation Roadmap',
-        items: ['Playwright (Learning)', 'Selenium', 'API Testing', 'VS Code', 'npm'],
+        category: 'Security Awareness',
+        items: [
+          'OWASP Basics',
+          'Authentication Testing',
+          'Input Validation',
+          'Session Testing',
+          'Injection Vulnerabilities'
+        ],
       },
       {
-        category: 'Tools & Utilities',
-        items: ['Postman', 'Chrome DevTools', 'Git', 'GitHub', 'Vite'],
+        category: 'Tools',
+        items: [
+          'Postman',
+          'MongoDB Compass',
+          'Chrome DevTools',
+          'Git',
+          'GitHub'
+        ],
       },
       {
-        category: 'Soft Skills',
-        items: ['Analytical Thinking', 'Detail Oriented', 'Documentation', 'Collaboration', 'Problem Solving'],
+        category: 'Automation (Learning)',
+        items: [
+          'Python',
+          'Selenium',
+          'Playwright',
+          'Pytest',
+          'Automation Framework Basics'
+        ],
       },
     ]
   },
 
-  // 6. About Section (Dossier)
+  // 6. About Section
   about: {
     label: "Candidate Profile",
     title: "Operative Profile",
-    // Bio rewritten to highlight MCA degree + Developer mindset applied to QA
-    bio: `Aspiring QA Engineer and 2025 MCA Graduate. I hold a strong proficiency in Manual Testing methodologies (STLC, Bug Life Cycle) and a technical background in Web Development (JavaScript, React). Currently transitioning into Test Automation to build scalable testing frameworks. Passionate about bridging the gap between development and quality assurance.`,
+    bio: `QA Engineer with hands-on experience executing full Software Testing Life Cycle processes on real web applications. Designed and executed 150+ manual test cases across authentication workflows including login, signup, password recovery, and token management. Identified 13 defects including critical security vulnerabilities such as NoSQL injection and brute-force attack exposure.
+
+Additionally completed an AI Automation internship where I built Python-based data analysis pipelines using Retrieval-Augmented Generation (RAG) techniques. Currently expanding expertise in API testing and Python automation to build scalable QA pipelines.`,
     metadata: [
       { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" },
       { label: "Availability", value: "Immediate", sub: "Full-time / Intern" }
@@ -152,8 +172,8 @@ export const PORTFOLIO_DATA: PortfolioData = {
       id: "#MCA-2025",
       lastAudit: "Dec 2025",
       stats: [
-        { label: "Graduation", value: 2025, suffix: " ", icon: Calendar },
-        { label: "Projects", value: 5, suffix: "+", icon: Award },
+        { label: "Graduation", value: 2025, suffix: "", icon: Calendar },
+        { label: "QA Case Studies", value: 2, suffix: "+", icon: Award },
         { label: "Learning Rate", value: 100, suffix: "%", decimals: 0, icon: Activity }
       ]
     }
@@ -161,11 +181,11 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
   // 7. Footer
   footer: {
-    statusText: "System Status: Optimal",
+    statusText: "System Status: Open for QA Opportunities"
   }
 };
 
-// Backward compatibility exports if needed, pointing to the new structure
+// Backward compatibility exports
 export const NAV_ITEMS = PORTFOLIO_DATA.navbar.items;
 export const SOCIAL_LINKS = PORTFOLIO_DATA.config.socials;
 export const PROJECTS = PORTFOLIO_DATA.projects.items;
