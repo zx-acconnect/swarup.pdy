@@ -107,7 +107,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         { label: 'Contrast Issues', value: 13 },
         { label: 'Accessibility Alerts', value: 436 },
     ],
-    repoUrl: 'https://github.com/swarup-padhy/Mern-Chat-QA'
+    repoUrl: 'https://github.com/swarup-padhy/Wikipedia-Accessibility-Audit'
 },
 
             {
