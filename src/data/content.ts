@@ -8,33 +8,34 @@ import {
 import { PortfolioData } from '../types';
 
 export const PORTFOLIO_DATA: PortfolioData = {
-    // 1. Global Site Configuration
+
+    // Global Site Configuration
     config: {
-        name: "Swarup padhy",
-        title: "QA Architect",
+        name: "Swarup Padhy",
+        title: "QA Engineer",
         logo: {
             main: "swarup.pdy",
-            sub: "QA Architect"
+            sub: "QA Engineer"
         },
         email: "swarup.pdy@gmail.com",
         resumeUrl: "/Resume.pdf",
         resumeFileName: "Resume.pdf",
         socials: [
-            { label: 'Github', url: 'https://github.com', icon: Github },
+            { label: 'Github', url: 'https://github.com/swarup-padhy', icon: Github },
             { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
         ]
     },
 
-    // 1b. SEO / Open Graph
+    // SEO
     seo: {
         title: "Swarup Padhy | QA Engineer",
-        description: "Aspiring Quality Engineer & MCA Graduate 2025. Specializing in manual testing, bug lifecycle, and web technologies.",
+        description: "QA Engineer (MCA 2025) specializing in Manual Testing, API validation, and security analysis. Executed 150+ test cases and identified critical vulnerabilities in authentication systems.",
         image: "/og-image.png",
         url: "https://swarup.pdy",
         type: "website"
     },
 
-    // 2. Navigation
+    // Navigation
     navbar: {
         items: [
             { label: 'Overview', id: 'home' },
@@ -45,7 +46,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
         ctaText: "Connect"
     },
 
-    // 3. Hero Section
+    // Hero Section
     hero: {
         status: {
             label: "Open to Work",
@@ -58,125 +59,151 @@ export const PORTFOLIO_DATA: PortfolioData = {
             secondary: "Engineer"
         },
         bio: {
-            prefix: "Dedicated to ",
-            highlight: "delivering bug-free user experiences",
-            suffix: " through rigorous manual & automated testing.",
+            prefix: "Focused on ",
+            highlight: "finding critical defects before users do",
+            suffix: " through structured manual and API testing.",
             tagline: "// I break it so your users don't."
         },
-        cta: "Download Resume",           // Changed to prioritize getting hired
+        cta: "Download Resume",
         stats: [
-            { label: "Attention to Detail", value: 100, suffix: "%", decimals: 0, highlight: true }, // Critical soft skill for QA
-            { label: "Tech Stack", value: 4, suffix: "+" }, // HTML, CSS, JS, React
-            { label: "Bug Tolerance", value: 0, suffix: "%" } // Shows your mindset
+            { label: "Test Cases Designed", value: 150, suffix: "+" },
+            { label: "Bugs Identified", value: 13, suffix: "+" },
+            { label: "Projects Tested", value: 3, suffix: "+" }
         ]
     },
 
-    // 4. Projects Section
+    // Projects
     projects: {
         label: "Engineering Logs",
-        title: "Selected Case Studies",
+        title: "QA Case Studies",
         items: [
+
             {
                 id: '01',
-                title: 'HFT Algorithmic Core',
-                description: 'Architected the validation framework for a nanosecond-latency trading engine. Implemented kernel-bypass networking tests and automated regression pipelines that reduced deployment risk by 99% in a high-frequency trading environment.',
-                tags: ['C++', 'Python', 'FPGA Testing', 'Latency Mon'],
+                title: 'Authentication System — Security & Functional Testing',
+                description: 'Performed full QA audit on a MERN authentication system. Designed 150 manual test cases across 13 modules including signup, login, password recovery, token management, and security validation. Identified 13 defects including critical vulnerabilities such as NoSQL injection and missing rate limiting.',
+                tags: ['Manual Testing', 'Security Testing', 'API Testing', 'Postman', 'MongoDB'],
                 metrics: [
-                    { label: 'Latency Reduct', value: 45, suffix: '%' },
-                    { label: 'Test Vector', value: 1.2, suffix: 'M' },
-                    { label: 'Deploy Freq', value: 12, suffix: '/day' },
+                    { label: 'Test Cases', value: 150 },
+                    { label: 'Bugs Found', value: 13 },
+                    { label: 'Critical Bugs', value: 2 },
                 ],
-                repoUrl: 'https://github.com/swarup-pdy/hft-core',
+                repoUrl: 'https://github.com/swarup-padhy/Authentication-system-QA',
             },
+
+
             {
                 id: '02',
-                title: 'Distributed Load Mesh',
-                description: 'Designed a self-healing load generation mesh on AWS Lambda capable of simulating 100k+ concurrent IoT devices. This framework identified critical race conditions in the ingestion layer before production rollout.',
-                tags: ['Go', 'Terraform', 'AWS Lambda', 'MQTT'],
+                title: 'MERN Chat Application — Functional QA Testing',
+                description: 'Executed structured manual testing on a MERN stack real-time chat application. Validated authentication flows, user sessions, message delivery, chat creation, and UI state changes. Designed test scenarios covering user registration, login/logout, message sending, chat history persistence, and edge cases in real-time messaging workflows.',
+                tags: ['Manual Testing', 'Functional Testing', 'Web Testing', 'Test Scenarios', 'Bug Reporting'],
                 metrics: [
-                    { label: 'Concurrency', value: 100, suffix: 'k' },
-                    { label: 'Cost/Test', value: 0.85, prefix: '$' },
-                    { label: 'Bugs Caught', value: 24 },
+                    { label: 'Modules Tested', value: 5 },
+                    { label: 'Test Scenarios', value: 40, suffix: '+' },
+                    { label: 'Workflows Validated', value: 10, suffix: '+' },
                 ],
-                repoUrl: 'https://github.com/swarup-pdy/load-mesh',
+                repoUrl: 'https://github.com/swarup-padhy/Mern-Chat-QA',
             },
+
+
             {
                 id: '03',
-                title: 'Security Compliance Bot',
-                description: 'Developed an automated security auditing bot that continuously scans for OWASP Top 10 vulnerabilities and GDPR compliance issues within the CI pipeline, enforcing strict quality gates for banking applications.',
-                tags: ['Python', 'Zap', 'SonarQube', 'DevSecOps'],
+                title: 'AI Data Automation (RAG System)',
+                description: 'Built during AI Automation Internship. Developed a Python-based Retrieval-Augmented Generation pipeline for analyzing large CSV/Excel datasets. Implemented preprocessing, embeddings, vector database indexing, and integrated Ollama LLM for semantic pattern retrieval.',
+                tags: ['Python', 'RAG', 'Vector Database', 'Ollama', 'Data Automation'],
                 metrics: [
-                    { label: 'Vuln. Blocked', value: 142 },
-                    { label: 'Audit Time', value: 3, suffix: 'm' },
-                    { label: 'Coverage', value: 100, suffix: '%' },
+                    { label: 'Data Files', value: 100, suffix: '+' },
+                    { label: 'Automation Gain', value: 60, suffix: '%' },
+                    { label: 'Processing Pipeline', value: 1 },
                 ],
-                repoUrl: 'https://github.com/swarup-pdy/sec-bot',
             },
+
         ]
     },
 
-    // 5. Skills Section
-    // 5. Skills Section
+    // Skills
     skills: {
         label: "Core Competencies",
         title: "Technical Arsenal",
         items: [
+
             {
-                category: 'QA Fundamentals', // Changed from "Core Automation"
-                items: ['Manual Testing', 'Test Case Design', 'Bug Lifecycle', 'Agile/Scrum', 'Jira'],
+                category: 'Manual Testing',
+                items: ['Test Case Design', 'Test Scenarios', 'STLC', 'Bug Lifecycle', 'Defect Reporting'],
             },
+
             {
-                category: 'Web Technologies', // Your MCA Background
-                items: ['JavaScript (ES6+)', 'React.js', 'HTML5', 'CSS3', 'DOM Manipulation'],
+                category: 'API Testing',
+                items: ['Postman', 'REST API Testing', 'JSON Validation', 'HTTP Methods', 'Status Code Validation'],
             },
+
             {
-                category: 'Automation Roadmap', // Your 4-5 month plan
-                items: ['Playwright (Learning)', 'Selenium', 'API Testing', 'VS Code', 'npm'],
+                category: 'Database Validation',
+                items: ['MongoDB', 'SQL ', 'Data Integrity Verification'],
             },
+
             {
-                category: 'Tools & Utilities', // Essential tools you surely know/use
-                items: ['Postman', 'Chrome DevTools', 'Git', 'GitHub', 'Vite'],
+                category: 'Tools',
+                items: ['Jira', 'Git', 'GitHub', 'Chrome DevTools'],
             },
+
             {
-                category: 'Soft Skills', // Crucial for freshers
-                items: ['Analytical Thinking', 'Detail Oriented', 'Documentation', 'Collaboration', 'Problem Solving'],
+                category: 'Automation (Learning)',
+                items: ['Python', 'Selenium', 'Pytest', 'Playwright'],
             },
+
+            {
+                category: 'Soft Skills',
+                items: ['Analytical Thinking', 'Attention to Detail', 'Documentation', 'Problem Solving', 'Collaboration'],
+            },
+
         ]
     },
 
-    // 6. About Section (Dossier)
+    // About
     about: {
         label: "Candidate Profile",
         title: "Operative Profile",
-        // Bio rewritten to highlight MCA degree + Developer mindset applied to QA
-        bio: `I am a recent MCA Graduate (2025) and aspiring Quality Engineer with a developer's mindset. With a strong foundation in web technologies (HTML, CSS, JS, React), I don't just find bugs—I understand why they happen. I am currently focused on mastering Manual Testing methodologies while building a robust automation skillset within the JavaScript ecosystem. My goal is to bridge the gap between code and customer satisfaction.`,
+
+        bio: `QA Engineer with strong focus on Manual Testing, API validation, and security analysis.
+
+Designed and executed 150+ test cases for a MERN authentication system and identified multiple critical vulnerabilities including NoSQL injection and missing rate limiting.
+
+Background in MCA (2025) with technical understanding of web architecture, allowing deeper debugging beyond UI-level testing.
+
+Currently expanding into Python-based automation using Selenium and Pytest to build scalable regression testing frameworks.`,
+
         metadata: [
-            { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" }, // Updated location
+            { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" },
             { label: "Availability", value: "Immediate", sub: "Full-time / Intern" }
         ],
+
         status: {
             clearance: "MCA Graduate",
             current: "Open to Work"
         },
+
         serviceRecord: {
-            title: "Academic Record",
+            title: "Academic & Internship Record",
             id: "#MCA-2025",
             lastAudit: "Dec 2025",
+
             stats: [
-                { label: "Graduation", value: 2025, suffix: " ", icon: Calendar },
-                { label: "Projects", value: 5, suffix: "+", icon: Award }, // Includes college/portfolio projects
+                { label: "Graduation", value: 2025, suffix: "", icon: Calendar },
+                { label: "Projects", value: 3, suffix: "+", icon: Award },
                 { label: "Learning Rate", value: 100, suffix: "%", decimals: 0, icon: Activity }
             ]
         }
     },
 
-    // 7. Footer
+    // Footer
     footer: {
         statusText: "System Status: Nominal"
     }
 };
 
-// Backward compatibility exports if needed, pointing to the new structure
+
+// Backward compatibility exports
 export const NAV_ITEMS = PORTFOLIO_DATA.navbar.items;
 export const SOCIAL_LINKS = PORTFOLIO_DATA.config.socials;
 export const PROJECTS = PORTFOLIO_DATA.projects.items;
