@@ -91,9 +91,27 @@ export const PORTFOLIO_DATA: PortfolioData = {
                 repoUrl: 'https://github.com/swarup-padhy/Authentication-system-QA',
             },
 
+            {
+    id: '02',
+    title: 'Wikipedia Accessibility Audit — WCAG 2.1 Testing',
+    description: 'Performed an accessibility audit on a Wikipedia article page following WCAG 2.1 guidelines. Conducted manual keyboard navigation testing and automated scanning using WAVE to evaluate accessibility compliance. Identified multiple accessibility issues including missing alternative text, empty links, contrast violations, and dropdown focus behavior affecting readability.',
+    tags: [
+        'Accessibility Testing',
+        'WCAG 2.1',
+        'Manual Testing',
+        'Keyboard Testing',
+        'WAVE Tool'
+    ],
+    metrics: [
+        { label: 'Errors Found', value: 5 },
+        { label: 'Contrast Issues', value: 13 },
+        { label: 'Accessibility Alerts', value: 436 },
+    ],
+    repoUrl: ''
+}
 
             {
-                id: '02',
+                id: '03',
                 title: 'MERN Chat Application — Functional QA Testing',
                 description: 'Executed structured manual testing on a MERN stack real-time chat application. Validated authentication flows, user sessions, message delivery, chat creation, and UI state changes. Designed test scenarios covering user registration, login/logout, message sending, chat history persistence, and edge cases in real-time messaging workflows.',
                 tags: ['Manual Testing', 'Functional Testing', 'Web Testing', 'Test Scenarios', 'Bug Reporting'],
@@ -107,7 +125,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
 
             {
-                id: '03',
+                id: '04',
                 title: 'AI Data Automation (RAG System)',
                 description: 'Built during AI Automation Internship. Developed a Python-based Retrieval-Augmented Generation pipeline for analyzing large CSV/Excel datasets. Implemented preprocessing, embeddings, vector database indexing, and integrated Ollama LLM for semantic pattern retrieval.',
                 tags: ['Python', 'RAG', 'Vector Database', 'Ollama', 'Data Automation'],
@@ -190,7 +208,7 @@ Currently expanding into Python-based automation using Selenium and Pytest to bu
 
             stats: [
                 { label: "Graduation", value: 2025, suffix: "", icon: Calendar },
-                { label: "Projects", value: 3, suffix: "+", icon: Award },
+                { label: "Projects", value: 4, suffix: "+", icon: Award },
                 { label: "Learning Rate", value: 100, suffix: "%", decimals: 0, icon: Activity }
             ]
         }
