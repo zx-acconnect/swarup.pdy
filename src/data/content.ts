@@ -139,44 +139,78 @@ export const PORTFOLIO_DATA: PortfolioData = {
         ]
     },
 
-    // Skills
-    skills: {
-        label: "Core Competencies",
-        title: "Technical Arsenal",
-        items: [
+   // Skills
+skills: {
+    label: "Core Competencies",
+    title: "QA Skillset & Tooling",
+    items: [
 
-            {
-                category: 'Manual Testing',
-                items: ['Test Case Design', 'Test Scenarios', 'STLC', 'Bug Lifecycle', 'Defect Reporting'],
-            },
+        {
+            category: 'Manual & Functional Testing',
+            items: [
+                'Test Case Design',
+                'Test Scenario Creation',
+                'STLC & SDLC Understanding',
+                'Boundary Value Analysis',
+                'Negative Testing',
+                'Defect Lifecycle Management'
+            ],
+        },
 
-            {
-                category: 'API Testing',
-                items: ['Postman', 'REST API Testing', 'JSON Validation', 'HTTP Methods', 'Status Code Validation'],
-            },
+        {
+            category: 'API & Backend Testing',
+            items: [
+                'Postman',
+                'REST API Testing',
+                'HTTP Methods & Status Codes',
+                'JSON Response Validation',
+                'Authentication Token Testing'
+            ],
+        },
 
-            {
-                category: 'Database Validation',
-                items: ['MongoDB', 'SQL ', 'Data Integrity Verification'],
-            },
+        {
+            category: 'Accessibility Testing',
+            items: [
+                'WCAG 2.1 Guidelines',
+                'Keyboard Navigation Testing',
+                'WAVE Accessibility Tool',
+                'Screen Reader Compatibility Basics',
+                'Color Contrast Validation'
+            ],
+        },
 
-            {
-                category: 'Tools',
-                items: ['Jira', 'Git', 'GitHub', 'Chrome DevTools'],
-            },
+        {
+            category: 'Database Validation',
+            items: [
+                'MongoDB',
+                'SQL Queries',
+                'Data Integrity Verification',
+                'Backend Data Validation'
+            ],
+        },
 
-            {
-                category: 'Automation (Learning)',
-                items: ['Python', 'Selenium', 'Pytest', 'Playwright'],
-            },
+        {
+            category: 'QA Tools',
+            items: [
+                'Jira',
+                'Git',
+                'GitHub',
+                'Chrome DevTools'
+            ],
+        },
 
-            {
-                category: 'Soft Skills',
-                items: ['Analytical Thinking', 'Attention to Detail', 'Documentation', 'Problem Solving', 'Collaboration'],
-            },
+        {
+            category: 'Automation (Learning)',
+            items: [
+                'Python',
+                'Selenium',
+                'Pytest',
+                'Playwright'
+            ],
+        },
 
-        ]
-    },
+    ]
+},
 
     // About
     about: {
