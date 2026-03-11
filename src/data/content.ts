@@ -103,9 +103,9 @@ export const PORTFOLIO_DATA: PortfolioData = {
         'WAVE Tool'
     ],
     metrics: [
-        { label: 'Errors Found', value: 5 },
-        { label: 'Contrast Issues', value: 13 },
-        { label: 'Accessibility Alerts', value: 436 },
+        { label: 'Errors Found', value: 28 },
+        { label: 'Contrast Issues', value: 100 },
+        { label: 'Accessibility Alerts', value: 1322 },
     ],
     repoUrl: 'https://github.com/swarup-padhy/Wikipedia-Accessibility-Audit'
 },
