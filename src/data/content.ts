@@ -17,8 +17,8 @@ export const PORTFOLIO_DATA: PortfolioData = {
             sub: "QA Engineer"
         },
         email: "swarup.pdy@gmail.com",
-        resumeUrl: "/Resume.pdf",
-        resumeFileName: "Resume.pdf",
+        resumeUrl: "/Swarup_QE_Engineer.pdf",
+        resumeFileName: "Swarup_QE_Engineer",
         socials: [
             { label: 'Github', url: 'https://github.com/swarup-padhy', icon: Github },
             { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swarup-padhy', icon: Linkedin }
