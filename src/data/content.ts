@@ -27,14 +27,13 @@ export const PORTFOLIO_DATA: PortfolioData = {
     },
 
     // SEO
-    seo: {
-        title: "Swarup Padhy | QA Engineer",
-        description: "QA Engineer (MCA 2025) specializing in Manual Testing, API validation, and security analysis. Executed 150+ test cases and identified critical vulnerabilities in authentication systems.",
-        image: "/og-image.png",
-        url: "https://swarup.pdy",
-        type: "website"
-    },
-
+seo: {
+    title: "Swarup Padhy | QA Engineer | API & Automation Testing",
+    description: "QA Engineer specializing in API testing, automation using Pytest & Selenium, and manual testing. Built automation frameworks and identified critical defects in real-world applications.",
+    image: "/og-image.png",
+    url: "https://swarup.pdy",
+    type: "website"
+},
     // Navigation
     navbar: {
         items: [
@@ -48,22 +47,22 @@ export const PORTFOLIO_DATA: PortfolioData = {
 
     // Hero Section
     hero: {
-        status: {
-            label: "Open to Work",
-            version: "2025 Batch",
-            readyText: "Immediate Joiner"
-        },
+       stats: [
+    { label: "Test Cases Designed", value: 150, suffix: "+" },
+    { label: "Bugs Identified", value: 13, suffix: "+" },
+    { label: "Automation Coverage", value: 3, suffix: " Layers" }
+]
         watermark: "QE",
         headline: {
             primary: "Quality",
             secondary: "Engineer"
         },
         bio: {
-            prefix: "Focused on ",
-            highlight: "finding critical defects before users do",
-            suffix: " through structured manual and API testing.",
-            tagline: "// I break it so your users don't."
-        },
+    prefix: "Focused on ",
+    highlight: "API validation and automation testing with Python",
+    suffix: " to identify defects early and improve system reliability.",
+    tagline: "// I break systems before users do."
+},
         cta: "Download Resume",
         stats: [
             { label: "Test Cases Designed", value: 150, suffix: "+" },
@@ -79,9 +78,21 @@ export const PORTFOLIO_DATA: PortfolioData = {
         items: [
 
             {
+    id: '00',
+    title: 'E-Commerce QA Automation Framework (API + UI + E2E)',
+    description: 'Built a Python-based automation framework using Pytest and Selenium to test a MERN e-commerce application. Automated API and UI workflows including login, product browsing, cart, and checkout. Implemented end-to-end test scenarios and structured the framework using Page Object Model and reusable fixtures for maintainability.',
+    tags: ['Python', 'Pytest', 'Selenium', 'API Testing', 'Automation Framework'],
+    metrics: [
+        { label: 'Test Coverage', value: 3, suffix: ' Layers' },
+        { label: 'Test Cases', value: 16 },
+        { label: 'Execution Time', value: 28, suffix: 's' },
+    ],
+    repoUrl: 'https://github.com/swarup-padhy/QA-Automation-E-Commerce-Testing-Framework',
+},
+            {
                 id: '01',
                 title: 'Authentication System — Security & Functional Testing',
-                description: 'Performed full QA audit on a MERN authentication system. Designed 150 manual test cases across 13 modules including signup, login, password recovery, token management, and security validation. Identified 13 defects including critical vulnerabilities such as NoSQL injection and missing rate limiting.',
+                description: 'Performed QA testing on a MERN authentication system covering functional, API, and basic security validation. Designed and executed 150+ test cases for login, signup, and session handling. Identified 13 defects including NoSQL injection and missing rate limiting.',
                 tags: ['Manual Testing', 'Security Testing', 'API Testing', 'Postman', 'MongoDB'],
                 metrics: [
                     { label: 'Test Cases', value: 150 },
@@ -121,18 +132,7 @@ export const PORTFOLIO_DATA: PortfolioData = {
                     { label: 'Workflows Validated', value: 10, suffix: '+' },
                 ],
                 repoUrl: 'https://github.com/swarup-padhy/Mern-Chat-QA',
-            },
-
-
-            {
-                id: '04',
-                title: 'AI Data Automation (RAG System)',
-                description: 'Built during AI Automation Internship. Developed a Python-based Retrieval-Augmented Generation pipeline for analyzing large CSV/Excel datasets. Implemented preprocessing, embeddings, vector database indexing, and integrated Ollama LLM for semantic pattern retrieval.',
-                tags: ['Python', 'RAG', 'Vector Database', 'Ollama', 'Data Automation'],
-                metrics: [
-                    { label: 'Data Files', value: 100, suffix: '+' },
-                    { label: 'Automation Gain', value: 60, suffix: '%' },
-                    { label: 'Processing Pipeline', value: 1 },
+            }
                 ],
             },
 
@@ -200,14 +200,15 @@ skills: {
         },
 
         {
-            category: 'Automation (Learning)',
-            items: [
-                'Python',
-                'Selenium',
-                'Pytest',
-                'Playwright'
-            ],
-        },
+    category: 'Automation Testing',
+    items: [
+        'Python',
+        'Pytest',
+        'Selenium WebDriver',
+        'API Automation (Requests)',
+        'Test Framework Design'
+    ],
+},
 
     ]
 },
@@ -217,15 +218,13 @@ skills: {
         label: "Candidate Profile",
         title: "Operative Profile",
 
-        bio: `QA Engineer with strong focus on Manual Testing, API validation, and security analysis.
+        bio: `QA Engineer with hands-on experience in API testing, manual testing, and automation using Python.
 
-Designed and executed 150+ test cases for a MERN authentication system and identified multiple critical vulnerabilities including NoSQL injection and missing rate limiting.
+Built an automation framework using Pytest and Selenium covering API, UI, and end-to-end testing for a full-stack application.
 
-Background in MCA (2025) with technical understanding of web architecture, allowing deeper debugging beyond UI-level testing.
+Experienced in designing test cases, validating REST APIs, and identifying critical defects including security vulnerabilities such as NoSQL injection.
 
-Currently expanding into Python-based automation using Selenium and Pytest to build scalable regression testing frameworks.`,
-
-        metadata: [
+Background in MCA (2025) with understanding of web architecture, enabling effective debugging across frontend and backend systems.`,        metadata: [
             { label: "Base of Operations", value: "Hyderabad, India", sub: "Open to Relocate" },
             { label: "Availability", value: "Immediate", sub: "Full-time / Intern" }
         ],
